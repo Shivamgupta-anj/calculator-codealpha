@@ -1,38 +1,46 @@
-Modern Calculator – Animated UI | HTML, CSS & JavaScript
+# 🧮 Calculator Pro – Modern Web Calculator
 
-A beautifully designed, animated, modern calculator web application.
-This project includes a landing page with smooth animations and a stylish glass-effect calculator UI.
+A **modern, responsive, and animated calculator web application** built using **HTML, CSS, and JavaScript**.  
+It supports **both keyboard input and mouse/touch interaction**, providing a smooth and user-friendly experience.
 
-🚀 <h2>Features</h2>
+This project was developed as part of a learning journey with **CodeAlpha** 🚀.
 
-🌈 Animated Gradient Background
+---
 
-🟣 Floating Glassmorphism Calculator
+## ✨ Features
 
-✨ Animated Landing Page
+- 🎨 Modern and attractive UI design  
+- 🌈 Animated background and smooth transitions  
+- 🏠 Interactive landing page  
+- 🧠 Fully functional calculator:
+  - Addition (+)
+  - Subtraction (−)
+  - Multiplication (×)
+  - Division (÷)
+- ⌨️ **Keyboard support**
+- 🖱️ **Mouse & touch support**
+- 📱 Responsive design (works on desktop & mobile)
+- 🚫 Division by zero protection
 
-🔢 Basic Arithmetic Operations
-(Addition, Subtraction, Multiplication, Division)
+---
 
-🧮 Real-time Display Update
+## ⌨️ Keyboard Controls
 
-📱 Fully Responsive UI
+| Key | Function |
+|----|---------|
+| `0–9` | Enter numbers |
+| `.` | Decimal point |
+| `+ - * /` | Operators |
+| `Enter` or `=` | Calculate result |
+| `Backspace` | Delete last digit |
+| `Esc` or `C` | Clear display |
 
-📁 Project Structure
+---
 
-After dividing the code into different pages, your folder structure will look like this:
+## 🛠️ Technologies Used
 
-📂 Modern-Calculator
- ├── 📄 index.html        (Landing page + calculator structure)
- ├── 📄 style.css         (All styling + animations)
- ├── 📄 script.js         (All calculator logic)
- ├── 📄 README.md         (Project documentation)
- └── 📂 assets/           (Optional: images/screenshots)
+- **HTML5** – Structure  
+- **CSS3** – Styling, animations, and layout  
+- **JavaScript (Vanilla JS)** – Logic and interactivity  
 
-🛠️ Technologies Used
 
-HTML5 – Structure
-
-CSS3 – Styling, animations, floating background
-
-JavaScript (ES6) – Calculator functionality

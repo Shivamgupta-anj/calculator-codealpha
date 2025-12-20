@@ -37,7 +37,14 @@ function calculate() {
         case '+': result = prev + current; break;
         case '-': result = prev - current; break;
         case '*': result = prev * current; break;
-        case '/': result = prev / current; break;
+        case '/':
+            if (current === 0) {
+                alert("Cannot divide by zero");
+                clearDisplay();
+                return;
+            }
+            result = prev / current;
+            break;
         default: return;
     }
 
@@ -53,6 +60,32 @@ function clearDisplay() {
     operator = '';
     updateDisplay();
 }
+
+
+document.addEventListener('keydown', function (event) {
+    const key = event.key;
+
+    if (!isNaN(key)) {
+        appendNumber(key);
+    } 
+    else if (key === '.') {
+        appendNumber('.');
+    } 
+    else if (key === '+' || key === '-' || key === '*' || key === '/') {
+        appendOperator(key);
+    } 
+    else if (key === 'Enter' || key === '=') {
+        calculate();
+    } 
+    else if (key === 'Backspace') {
+        currentInput = currentInput.slice(0, -1);
+        if (currentInput === '') currentInput = '0';
+        updateDisplay();
+    } 
+    else if (key === 'Escape' || key.toLowerCase() === 'c') {
+        clearDisplay();
+    }
+});
 
 function startCalculating() {
     document.getElementById('landing-page').classList.add('hide');
